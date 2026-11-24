@@ -1,0 +1,67 @@
+{
+  "status": "frozen_before_evaluation",
+  "model_repository": "Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+  "model_revision": "f86cb2c1fa58255f8052cc32aeede1b7482d4361",
+  "model_sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+  "runtime_version": "version: 0.9.0-dev (build 12263, commit ac931b5bc)\nbuilt with GNU 11.4.0 for Linux x86_64",
+  "server_arguments": [
+    "--ctx-size",
+    "4096",
+    "--threads",
+    "6",
+    "--parallel",
+    "1",
+    "--gpu-layers",
+    "0",
+    "--no-webui",
+    "--no-cache-prompt"
+  ],
+  "prompt_version": "1.1-pilot",
+  "prompts_sha256": "691487b1490af2de3a3d0af72cdfaa6345b1a04af67bc3ec612dffffdc2c1cfb",
+  "setup_sha256": "b9aacc6d6e577722c7c7806e0a4db40972385392cd432b62cabe2ecf9dbb8e80",
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 811,
+    "max_tokens": 128
+  },
+  "conditions": {
+    "A": "Use the initial assessment as the final output.",
+    "B": "Use the output of a fresh review request with the self-review system prefix.",
+    "C": "Use the output of a fresh review request with the second-reviewer system prefix."
+  },
+  "planned_repetitions": 3,
+  "primary_comparison": "C versus B on the same functions, using F1 difference and paired corrections/regressions",
+  "secondary_comparison": "B and C versus A for precision, recall, F1, accuracy, and end-to-end time/tokens",
+  "scoring": "Use all three methods on each sample. Compare scores on their shared valid cases and report validity coverage per condition. Use BigVul labels as references after inference. Report each repetition and descriptive averages; repetitions reuse the same functions and are not independent samples.",
+  "timing": "Keep prompt caching disabled. Include the initial analysis and review request in B and C totals.",
+  "pilot_decision": "Keep the same prompts and model as the pilot for the held-out classification comparison. Record explanation completeness separately; a valid verdict can coexist with an incomplete explanation.",
+  "pilot_decision_changes": {
+    "A_to_B": {
+      "improved": [
+        "P03"
+      ],
+      "regressed": [
+        "P13",
+        "P17"
+      ],
+      "unchanged_count": 17
+    },
+    "A_to_C": {
+      "improved": [
+        "P03"
+      ],
+      "regressed": [
+        "P17"
+      ],
+      "unchanged_count": 18
+    },
+    "B_to_C": {
+      "improved": [
+        "P13"
+      ],
+      "regressed": [],
+      "unchanged_count": 19
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "dataset": "bstee615/bigvul",
+  "distribution": "unofficial mirror of BigVul",
+  "revision": "4d8647a9b52fdd2ae42343c60fd6c7c48bbff25e",
+  "split": "validation",
+  "source_url": "https://huggingface.co/datasets/bstee615/bigvul/resolve/4d8647a9b52fdd2ae42343c60fd6c7c48bbff25e/data/validation-00000-of-00001-d21ad392180d1f79.parquet",
+  "original_paper_doi": "10.1145/3379597.3387501",
+  "parquet_rows": 33049,
+  "eligible_rows_by_label": {
+    "0": 27835,
+    "1": 847
+  },
+  "pilot_rows_by_label": {
+    "0": 10,
+    "1": 10
+  },
+  "unique_projects": 15,
+  "source_sha256": "68003cac92fd5d3bae78c3d495fee3e081ba3115d497cab41b43733f8ffb8d53",
+  "random_seed": 811
+}

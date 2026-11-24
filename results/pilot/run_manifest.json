@@ -1,0 +1,51 @@
+{
+  "run_id": "20261111T022833110405Z",
+  "partial_run": false,
+  "sample_ids": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P17",
+    "P18",
+    "P19",
+    "P20"
+  ],
+  "pilot_sha256": "ee4a3a505fb6fb6ce57497b6aa884e825334ee00b4de855924e4a3d697d10694",
+  "model_sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+  "model_revision": "f86cb2c1fa58255f8052cc32aeede1b7482d4361",
+  "server_version": "version: 0.9.0-dev (build 12263, commit ac931b5bc)\nbuilt with GNU 11.4.0 for Linux x86_64",
+  "setup_sha256": "b9aacc6d6e577722c7c7806e0a4db40972385392cd432b62cabe2ecf9dbb8e80",
+  "prompts_sha256": "691487b1490af2de3a3d0af72cdfaa6345b1a04af67bc3ec612dffffdc2c1cfb",
+  "protocol_version": "1.1-pilot",
+  "generation": {
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 811,
+    "max_tokens": 128
+  },
+  "server_arguments": [
+    "--ctx-size",
+    "4096",
+    "--threads",
+    "6",
+    "--parallel",
+    "1",
+    "--gpu-layers",
+    "0",
+    "--no-webui",
+    "--no-cache-prompt"
+  ]
+}

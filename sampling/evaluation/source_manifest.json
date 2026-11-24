@@ -1,0 +1,36 @@
+{
+  "dataset": "bstee615/bigvul",
+  "distribution": "unofficial mirror of BigVul",
+  "original_paper_doi": "10.1145/3379597.3387501",
+  "revision": "4d8647a9b52fdd2ae42343c60fd6c7c48bbff25e",
+  "partition": "test",
+  "source_url": "https://huggingface.co/datasets/bstee615/bigvul/resolve/4d8647a9b52fdd2ae42343c60fd6c7c48bbff25e/data/test-00000-of-00001-d20b0e7149fa6eeb.parquet",
+  "source_sha256": "c55b9ea5553d779713cfddc133cc040359f860c75b89f4ef95513fbfe4752b39",
+  "source_rows": 33050,
+  "eligible_rows_by_label": {
+    "0": 27420,
+    "1": 733
+  },
+  "chosen_rows_by_label": {
+    "0": 50,
+    "1": 50
+  },
+  "unique_projects": 60,
+  "seed": 81104,
+  "filters": {
+    "dataset_language_tag": "C",
+    "trimmed_code_character_range": [
+      100,
+      4000
+    ],
+    "max_per_project": 5,
+    "one_sample_per_commit_and_per_nonempty_cve": true,
+    "exclude_pilot_commits_and_nonempty_cves": true,
+    "reject_token_five_gram_jaccard_at_or_above": 0.8,
+    "compare_duplicates_with_pilot_and_within_sample": true,
+    "positive": "source label 1, tokenized before/after differ, CVE ID present",
+    "negative": "source label 0, tokenized before/after identical",
+    "matching": "each selected positive is matched to the closest eligible negative by code character count"
+  },
+  "pilot_archive_sha256": "ee4a3a505fb6fb6ce57497b6aa884e825334ee00b4de855924e4a3d697d10694"
+}

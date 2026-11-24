@@ -1,0 +1,81 @@
+{
+  "attempted_samples": 20,
+  "paired_scored_samples": 20,
+  "paired_scored_sample_ids": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P17",
+    "P18",
+    "P19",
+    "P20"
+  ],
+  "paired_positive_labels": 10,
+  "paired_negative_labels": 10,
+  "conditions": {
+    "A": {
+      "valid": 20,
+      "invalid": 0,
+      "metrics": {
+        "tp": 8,
+        "tn": 3,
+        "fp": 7,
+        "fn": 2,
+        "accuracy": 0.55,
+        "precision": 0.5333333333333333,
+        "recall": 0.8,
+        "f1": 0.64
+      },
+      "mean_total_request_seconds": 2.51353185,
+      "mean_total_tokens": 569.6,
+      "cases_with_token_usage": 20
+    },
+    "B": {
+      "valid": 20,
+      "invalid": 0,
+      "metrics": {
+        "tp": 9,
+        "tn": 1,
+        "fp": 9,
+        "fn": 1,
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.9,
+        "f1": 0.6428571428571429
+      },
+      "mean_total_request_seconds": 5.1734241,
+      "mean_total_tokens": 1218.65,
+      "cases_with_token_usage": 20
+    },
+    "C": {
+      "valid": 20,
+      "invalid": 0,
+      "metrics": {
+        "tp": 9,
+        "tn": 2,
+        "fp": 8,
+        "fn": 1,
+        "accuracy": 0.55,
+        "precision": 0.5294117647058824,
+        "recall": 0.9,
+        "f1": 0.6666666666666666
+      },
+      "mean_total_request_seconds": 5.11417635,
+      "mean_total_tokens": 1219.7,
+      "cases_with_token_usage": 20
+    }
+  }
+}

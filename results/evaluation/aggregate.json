@@ -1,0 +1,77 @@
+{
+  "repetitions": 3,
+  "samples_per_repetition": 100,
+  "paired_scored_samples_per_repetition": [
+    100,
+    100,
+    100
+  ],
+  "by_condition": {
+    "A": {
+      "mean_accuracy": 0.56,
+      "mean_precision": 0.5428571428571428,
+      "mean_recall": 0.76,
+      "mean_f1": 0.6333333333333333,
+      "mean_fp": 32,
+      "mean_fn": 12,
+      "mean_total_request_seconds": 8.18987399,
+      "mean_total_tokens": 617.97,
+      "valid_per_repetition": [
+        100,
+        100,
+        100
+      ]
+    },
+    "B": {
+      "mean_accuracy": 0.53,
+      "mean_precision": 0.5176470588235295,
+      "mean_recall": 0.88,
+      "mean_f1": 0.6518518518518519,
+      "mean_fp": 41,
+      "mean_fn": 6,
+      "mean_total_request_seconds": 16.96291827,
+      "mean_total_tokens": 1319.91,
+      "valid_per_repetition": [
+        100,
+        100,
+        100
+      ]
+    },
+    "C": {
+      "mean_accuracy": 0.55,
+      "mean_precision": 0.5308641975308642,
+      "mean_recall": 0.86,
+      "mean_f1": 0.6564885496183206,
+      "mean_fp": 38,
+      "mean_fn": 7,
+      "mean_total_request_seconds": 17.097339393333332,
+      "mean_total_tokens": 1320.97,
+      "valid_per_repetition": [
+        100,
+        100,
+        100
+      ]
+    }
+  },
+  "f1_delta_C_minus_B_per_repetition": [
+    0.004636697766468689,
+    0.004636697766468689,
+    0.004636697766468689
+  ],
+  "mean_f1_delta_C_minus_B": 0.004636697766468689,
+  "status_and_verdict_matches_to_repetition_1": {
+    "A": [
+      100,
+      100
+    ],
+    "B": [
+      100,
+      100
+    ],
+    "C": [
+      100,
+      100
+    ]
+  },
+  "note": "Repetitions reuse the same functions. Means are descriptive, with no increase in independent sample size."
+}

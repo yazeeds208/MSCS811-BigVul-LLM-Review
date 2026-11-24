@@ -1,0 +1,62 @@
+{
+  "attempted_samples": 1,
+  "paired_scored_samples": 1,
+  "paired_scored_sample_ids": [
+    "P01"
+  ],
+  "paired_positive_labels": 0,
+  "paired_negative_labels": 1,
+  "conditions": {
+    "A": {
+      "valid": 1,
+      "invalid": 0,
+      "metrics": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "accuracy": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0
+      },
+      "mean_total_request_seconds": 6.940527,
+      "mean_total_tokens": 389,
+      "cases_with_token_usage": 1
+    },
+    "B": {
+      "valid": 1,
+      "invalid": 0,
+      "metrics": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "accuracy": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0
+      },
+      "mean_total_request_seconds": 12.917859,
+      "mean_total_tokens": 862,
+      "cases_with_token_usage": 1
+    },
+    "C": {
+      "valid": 1,
+      "invalid": 0,
+      "metrics": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "accuracy": 0.0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0
+      },
+      "mean_total_request_seconds": 13.07713,
+      "mean_total_tokens": 863,
+      "cases_with_token_usage": 1
+    }
+  }
+}

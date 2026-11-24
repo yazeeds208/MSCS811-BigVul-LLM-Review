@@ -1,0 +1,14 @@
+{
+  "source_filename": "MSCS811_Colab_Run_Results.zip",
+  "source_zip_sha256": "e13ff65ddf3203de99f741433fd6d1dede0f81024d53fc55c953fd30c6f5ce83",
+  "paired_scored_samples": [
+    89,
+    90,
+    90
+  ],
+  "valid_responses": 821,
+  "timed_out_requests": 43,
+  "blocked_reviews": 36,
+  "valid_verdicts_matching_original": 821,
+  "conclusion": "Transport wait expired at 90 seconds; no other recorded error type. No original result was edited."
+}

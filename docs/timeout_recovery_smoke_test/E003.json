@@ -1,0 +1,59 @@
+{
+  "sample_id": "E003",
+  "conditions": {
+    "A": {
+      "status": "ok",
+      "raw_response": "{\"reason\": \"The function does not handle the case where the value of the current parameter is NULL, which could lead to a segmentation fault if the value is not properly initialized.\", \"verdict\": \"vulnerability_identified\"}",
+      "output": {
+        "reason": "The function does not handle the case where the value of the current parameter is NULL, which could lead to a segmentation fault if the value is not properly initialized.",
+        "verdict": "vulnerability_identified"
+      },
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 50,
+        "prompt_tokens": 1738,
+        "total_tokens": 1788,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "elapsed_seconds": 18.955376
+    },
+    "B": {
+      "status": "ok",
+      "raw_response": "{\"reason\": \"The function does not handle the case where the value of the current parameter is NULL, which could lead to a segmentation fault if the value is not properly initialized.\", \"verdict\": \"vulnerability_identified\"}",
+      "output": {
+        "reason": "The function does not handle the case where the value of the current parameter is NULL, which could lead to a segmentation fault if the value is not properly initialized.",
+        "verdict": "vulnerability_identified"
+      },
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 48,
+        "prompt_tokens": 1819,
+        "total_tokens": 1867,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "elapsed_seconds": 19.979114
+    },
+    "C": {
+      "status": "ok",
+      "raw_response": "{\"reason\": \"The function does not handle the case where the value of the current parameter is NULL, which could lead to a segmentation fault if the value is not properly initialized.\", \"verdict\": \"vulnerability_identified\"}",
+      "output": {
+        "reason": "The function does not handle the case where the value of the current parameter is NULL, which could lead to a segmentation fault if the value is not properly initialized.",
+        "verdict": "vulnerability_identified"
+      },
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 48,
+        "prompt_tokens": 1820,
+        "total_tokens": 1868,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "elapsed_seconds": 20.258641
+    }
+  }
+}

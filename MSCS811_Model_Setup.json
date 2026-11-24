@@ -1,0 +1,94 @@
+{
+  "status": "verified by a local smoke test",
+  "project": "MSCS811 BigVul pilot",
+  "model": {
+    "repository": "Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+    "revision": "f86cb2c1fa58255f8052cc32aeede1b7482d4361",
+    "filename": "qwen2.5-coder-1.5b-instruct-q4_k_m.gguf",
+    "download_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF/resolve/f86cb2c1fa58255f8052cc32aeede1b7482d4361/qwen2.5-coder-1.5b-instruct-q4_k_m.gguf",
+    "sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+    "size_bytes": 1117320768,
+    "quantization": "Q4_K_M",
+    "alias": "MSCS811-Qwen2.5-Coder-1.5B"
+  },
+  "runtime": {
+    "name": "llama.cpp",
+    "release_tag": "b12263",
+    "version_output": "version: 0.9.0-dev (build 12263, commit ac931b5bc)\nbuilt with GNU 11.4.0 for Linux x86_64",
+    "release_url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12263",
+    "operating_system": "Linux",
+    "architecture": "x86_64",
+    "server_arguments": [
+      "--ctx-size",
+      "4096",
+      "--threads",
+      "6",
+      "--parallel",
+      "1",
+      "--gpu-layers",
+      "0",
+      "--no-webui"
+    ],
+    "bind_address": "127.0.0.1",
+    "chat_endpoint": "/v1/chat/completions"
+  },
+  "smoke_test": {
+    "scope": "Runtime connectivity and structured generation on a small arithmetic function. BigVul classification performance remains to be evaluated.",
+    "request": {
+      "model": "MSCS811-Qwen2.5-Coder-1.5B",
+      "messages": [
+        {
+          "role": "user",
+          "content": "What value does add(8, 5) return in this C code? int add(int a, int b) { return a + b; } Return a JSON object with the integer field value."
+        }
+      ],
+      "temperature": 0.0,
+      "seed": 811,
+      "max_tokens": 48,
+      "response_format": {
+        "type": "json_schema",
+        "json_schema": {
+          "name": "smoke_result",
+          "strict": true,
+          "schema": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "value"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    "raw_response": "{\n  \"value\": 13\n}",
+    "parsed_response": {
+      "value": 13
+    },
+    "elapsed_seconds_after_server_ready": 0.508,
+    "usage": {
+      "completion_tokens": 15,
+      "prompt_tokens": 70,
+      "total_tokens": 85,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 70,
+      "prompt_ms": 242.755,
+      "prompt_per_token_ms": 3.4679285714285712,
+      "prompt_per_second": 288.3565735000309,
+      "predicted_n": 15,
+      "predicted_ms": 260.385,
+      "predicted_per_token_ms": 18.59892857142857,
+      "predicted_per_second": 53.76653801102214
+    },
+    "finish_reason": "stop"
+  }
+}

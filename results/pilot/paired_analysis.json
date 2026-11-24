@@ -1,0 +1,85 @@
+{
+  "pilot_archive_sha256": "ee4a3a505fb6fb6ce57497b6aa884e825334ee00b4de855924e4a3d697d10694",
+  "runner_sha256": "4cc85eda9546571d666a682004f7f1b34a1fd6009e74f62877e8d3fd9dbf9efb",
+  "paired_scored_samples": 20,
+  "response_status_counts": {
+    "ok": 60
+  },
+  "reasons_at_200_character_limit": {
+    "A": 8,
+    "B": 7,
+    "C": 7
+  },
+  "decision_changes": {
+    "A_to_B": {
+      "improved": [
+        "P03"
+      ],
+      "regressed": [
+        "P13",
+        "P17"
+      ],
+      "unchanged_count": 17
+    },
+    "A_to_C": {
+      "improved": [
+        "P03"
+      ],
+      "regressed": [
+        "P17"
+      ],
+      "unchanged_count": 18
+    },
+    "B_to_C": {
+      "improved": [
+        "P13"
+      ],
+      "regressed": [],
+      "unchanged_count": 19
+    }
+  },
+  "false_positive_sample_ids": {
+    "A": [
+      "P01",
+      "P02",
+      "P08",
+      "P09",
+      "P12",
+      "P15",
+      "P16"
+    ],
+    "B": [
+      "P01",
+      "P02",
+      "P08",
+      "P09",
+      "P12",
+      "P13",
+      "P15",
+      "P16",
+      "P17"
+    ],
+    "C": [
+      "P01",
+      "P02",
+      "P08",
+      "P09",
+      "P12",
+      "P15",
+      "P16",
+      "P17"
+    ]
+  },
+  "false_negative_sample_ids": {
+    "A": [
+      "P03",
+      "P10"
+    ],
+    "B": [
+      "P10"
+    ],
+    "C": [
+      "P10"
+    ]
+  }
+}

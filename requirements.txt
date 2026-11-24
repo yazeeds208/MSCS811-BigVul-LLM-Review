@@ -1,0 +1,2 @@
+# Optional dependency for rebuilding samples from source Parquet files.
+pyarrow>=14

@@ -1,0 +1,1 @@
+A real Linux retry of the Colab R1 E003 case completed A/B/C with status ok on 2026-11-24. The recovery used a 600-second client timeout with the pinned model and runtime. Source records were unchanged, and complete inherited cases were byte-identical. This is a one-case test; the full recovery and a fresh 900-response run with the portable wrapper were not executed.
